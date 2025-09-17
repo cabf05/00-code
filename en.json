@@ -1,0 +1,241 @@
+{
+  "modal": {
+    "title": "Import {{type}} via Excel"
+  },
+  "buttons": {
+    "close": "Close",
+    "download_template": "Download Complete Template",
+    "back": "Back",
+    "process_file": "Process File",
+    "processing": "Processing...",
+    "confirm_import": "Confirm Import",
+    "importing": "Importing..."
+  },
+  "steps": {
+    "download": "Download Template",
+    "upload": "Upload Spreadsheet",
+    "confirmation": "Confirmation"
+  },
+  "instructions": {
+    "how_it_works_title": "How it works:",
+    "step1": "Download the complete Excel template with instructions",
+    "step2": "Fill in with your data following the instructions",
+    "step3": "Upload the completed file",
+    "step4": "Confirm and import the data",
+    "sheet_header": "IMPORT INSTRUCTIONS FOR {{type}}",
+    "sheet_header_plain": "IMPORT INSTRUCTIONS FOR {{type}}",
+    "required_title": "1. REQUIRED FIELDS (marked with *):",
+    "task_description": "   - Task Description: Text describing the task",
+    "list_field": "   - List: List name or numeric ID",
+    "responsible_field": "   - Responsible: User name or numeric ID",
+    "optional_title": "2. OPTIONAL FIELDS:",
+    "deadline_format": "   - Deadline: Format YYYY-MM-DD (e.g., 2024-12-31)",
+    "status_format": "   - Status: \"true\" for completed, \"false\" for pending",
+    "note_field": "   - Note: Additional task information",
+    "routine_description": "   - Routine Description: Text describing the routine",
+    "recurrence_type_field": "   - Recurrence Type: daily, weekly, monthly, yearly, biweekly, triweekly, quadweekly, monthly_weekday",
+    "start_date_format": "   - Start Date: Format YYYY-MM-DD (e.g., 2024-01-01)",
+    "recurrence_interval": "   - Recurrence Interval: Number (default: 1)",
+    "recurrence_days": "   - Week Days: For weekly, use 0-6 separated by commas",
+    "end_date_format": "   - End Date: Format YYYY-MM-DD or leave empty",
+    "persistent_field": "   - Persistent: \"true\" for persistent, \"false\" for not persistent",
+    "advanced_title": "3. FIELDS FOR ADVANCED TYPES:",
+    "weekly_interval": "   - Week Interval: For biweekly/triweekly/quadweekly (2, 3, 4)",
+    "weekday_field": "   - Weekday: For advanced types (0-6)",
+    "monthly_ordinal": "   - Monthly Ordinal: For monthly_weekday (1-4 = first-fourth, -1 = last)",
+    "monthly_weekday": "   - Monthly Weekday: For monthly_weekday (0-6)",
+    "available_lists": "AVAILABLE LISTS:",
+    "list_item": "   - ID {{id}}: {{name}} ({{project}})",
+    "available_users": "AVAILABLE USERS:",
+    "user_item": "   - ID {{id}}: {{name}}",
+    "notes_title": "6. IMPORTANT NOTES:",
+    "note_use_list_or_id": "   - You can use the list name or its numeric ID",
+    "note_use_user_or_id": "   - You can use the user name or their numeric ID",
+    "note_date_format": "   - Dates must be in the format YYYY-MM-DD",
+    "note_remove_example_rows": "   - Remove example rows before importing your data",
+    "note_required_fields": "   - Required fields cannot be empty",
+    "note_advanced_types": "   - For advanced types, fill in the specific fields"
+  },
+  "important": {
+    "title": "Important:",
+    "keep_columns": "Keep the original column format",
+    "required_marked": "Fields marked with * are required",
+    "advanced_fill": "For advanced recurrence types, fill in the specific fields",
+    "check_user_access": "Check if users have access to the selected lists"
+  },
+  "file": {
+    "click_to_select_another": "Click to select another file",
+    "click_to_select": "Click to select the Excel file",
+    "supported_formats": "Supported formats: .xlsx, .xls",
+    "name": "template_{{type}}_complete_{{timestamp}}.xlsx",
+    "type": {
+      "tasks": "tasks",
+      "routines": "routines"
+    }
+  },
+  "toast": {
+    "download_success": "Complete template for {{type}} downloaded successfully!",
+    "error_generate_template": "Error generating Excel template",
+    "select_file": "Select an Excel file",
+    "process_success": "{{count}} record(s) processed successfully!",
+    "sheet_errors": "{{count}} error(s) found in the spreadsheet",
+    "error_process_file": "Error processing Excel file",
+    "import_success": "{{count}} {{type}} imported successfully!",
+    "import_failures": "{{count}} {{type}} failed to import",
+    "error_import": "Error executing import"
+  },
+  "console": {
+    "error_generate_workbook": "Error generating spreadsheet:",
+    "error_process_file": "Error processing file:",
+    "error_insert_row": "Error inserting row {{row}}:",
+    "error_import": "Error in import:"
+  },
+  "errors": {
+    "title": "Errors found:"
+  },
+  "sheet": {
+    "tasks": "Tasks",
+    "routines": "Routines"
+  },
+  "headers": {
+    "task_description": "Task Description *",
+    "list_name_or_id": "List (Name or ID) *",
+    "responsible_name_or_id": "Responsible (Name or ID) *",
+    "deadline": "Deadline (YYYY-MM-DD)",
+    "status": "Status (true/false)",
+    "note": "Note",
+    "routine_description": "Routine Description *",
+    "recurrence_type": "Recurrence Type *",
+    "recurrence_interval": "Recurrence Interval",
+    "recurrence_days": "Week Days (0-6)",
+    "start_date": "Start Date (YYYY-MM-DD) *",
+    "end_date": "End Date (YYYY-MM-DD)",
+    "persistent": "Persistent (true/false)",
+    "weekly_interval": "Week Interval (2/3/4)",
+    "selected_weekday": "Weekday (0-6)",
+    "monthly_ordinal": "Monthly Ordinal (1-4, -1)",
+    "monthly_weekday": "Monthly Weekday (0-6)"
+  },
+  "examples": {
+    "title": "Usage examples:",
+    "task1": {
+      "content": "Implement new feature",
+      "list": "Development List",
+      "note": "High priority - client waiting"
+    },
+    "task2": {
+      "content": "Review documentation",
+      "list": "QA List",
+      "note": ""
+    },
+    "task3": {
+      "content": "Fix critical bug",
+      "list": "Development List",
+      "note": "Check system logs"
+    },
+    "routine1": {
+      "content": "Daily system backup",
+      "list": "Infrastructure List",
+      "note": "Full backup including database"
+    },
+    "routine2": {
+      "content": "Weekly team meeting",
+      "list": "Management List",
+      "note": "Every Monday at 10 AM"
+    },
+    "routine3": {
+      "content": "Monthly sales report",
+      "list": "Sales List",
+      "note": "Send to management by the 5th"
+    },
+    "routine4": {
+      "content": "Biweekly project review",
+      "list": "Management List",
+      "note": "Every 2 weeks on Wednesdays"
+    },
+    "routine5": {
+      "content": "First Monday meeting",
+      "list": "Management List",
+      "note": "First Monday of each month"
+    },
+    "biweekly": "Every 2 weeks on Wednesdays",
+    "monthly_weekday": "First Monday of each month",
+    "quadweekly": "Every 4 weeks on Fridays"
+  },
+  "validation": {
+    "description_required": "Row {{row}}: Description is required",
+    "list_required": "Row {{row}}: List is required",
+    "responsible_required": "Row {{row}}: Responsible is required",
+    "recurrence_required": "Row {{row}}: Recurrence type is required",
+    "recurrence_invalid": "Row {{row}}: Invalid recurrence type. Use: {{allowed}}",
+    "start_date_required": "Row {{row}}: Start date is required",
+    "weekday_required": "Row {{row}}: Weekday is required for type {{type}}",
+    "monthly_required": "Row {{row}}: Monthly ordinal and weekday are required for monthly_weekday",
+    "list_not_found": "Row {{row}}: List \"{{lista}}\" not found",
+    "user_not_found": "Row {{row}}: User \"{{usuario}}\" not found",
+    "user_no_access": "Row {{row}}: User \"{{usuarioName}}\" has no access to list \"{{listaName}}\"",
+    "date_format": "Row {{row}}: Date must be in the format YYYY-MM-DD",
+    "start_date_format": "Row {{row}}: Start date must be in the format YYYY-MM-DD",
+    "end_date_format": "Row {{row}}: End date must be in the format YYYY-MM-DD"
+  },
+  "table": {
+    "data_title": "Data for import ({{count}} records)",
+    "headers": {
+      "description": "Description",
+      "list": "List",
+      "responsible": "Responsible",
+      "recurrence": "Recurrence"
+    },
+    "every_interval": "every {{interval}}",
+    "more": "... and {{count}} more records"
+  },
+  "advanced": {
+    "button": "Advanced Recurrence Types",
+    "supported_title": "Supported Recurrence Types:",
+    "basic_title": "Basic Types:",
+    "advanced_title": "Advanced Types:"
+  },
+  "recurrence": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly (fixed day)",
+    "yearly": "Yearly",
+    "biweekly": "Every 2 weeks",
+    "triweekly": "Every 3 weeks",
+    "quadweekly": "Every 4 weeks",
+    "monthly_weekday": "Monthly pattern (e.g., 1st Monday)",
+    "monthly_weekday_short": "Monthly pattern"
+  },
+  "ordinal": {
+    "first": "First",
+    "second": "Second",
+    "third": "Third",
+    "fourth": "Fourth",
+    "last": "Last"
+  },
+  "day": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "short": {
+      "monday": "MON",
+      "tuesday": "TUE",
+      "wednesday": "WED",
+      "thursday": "THU",
+      "friday": "FRI",
+      "saturday": "SAT",
+      "sunday": "SUN"
+    }
+  },
+  "type": {
+    "tasks": "Tasks",
+    "routines": "Routines"
+  },
+  "general": {
+    "project_not_found": "Project not found"
+  }
+}
