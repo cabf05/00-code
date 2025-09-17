@@ -1,0 +1,109 @@
+{
+  "modal": {
+    "title": "Importar {{type}} vía Excel"
+  },
+  "buttons": {
+    "close": "Cerrar",
+    "download_template": "Descargar Plantilla Completa",
+    "back": "Volver",
+    "process_file": "Procesar Archivo",
+    "processing": "Procesando...",
+    "confirm_import": "Confirmar Importación",
+    "importing": "Importando..."
+  },
+  "steps": {
+    "download": "Descargar Plantilla",
+    "upload": "Subir Hoja de Cálculo",
+    "confirmation": "Confirmación"
+  },
+  "instructions": {
+    "how_it_works_title": "Cómo funciona:",
+    "step1": "Descargue la plantilla Excel completa con instrucciones",
+    "step2": "Complete con sus datos siguiendo las instrucciones",
+    "step3": "Suba el archivo completado",
+    "step4": "Confirme e importe los datos",
+    "sheet_header": "INSTRUCCIONES DE IMPORTACIÓN DE {{type}}",
+    "sheet_header_plain": "INSTRUCCIONES DE IMPORTACIÓN DE {{type}}",
+    "required_title": "1. CAMPOS OBLIGATORIOS (marcados con *):",
+    "task_description": "   - Descripción de la Tarea: Texto que describe la tarea",
+    "list_field": "   - Lista: Nombre de la lista o ID numérico",
+    "responsible_field": "   - Responsable: Nombre de usuario o ID numérico",
+    "optional_title": "2. CAMPOS OPCIONALES:",
+    "deadline_format": "   - Fecha Límite: Formato YYYY-MM-DD (ej: 2024-12-31)",
+    "status_format": "   - Estado: \"true\" para completada, \"false\" para pendiente",
+    "note_field": "   - Nota: Información adicional sobre la tarea",
+    "routine_description": "   - Descripción de la Rutina: Texto que describe la rutina",
+    "recurrence_type_field": "   - Tipo de Recurrencia: daily, weekly, monthly, yearly, biweekly, triweekly, quadweekly, monthly_weekday",
+    "start_date_format": "   - Fecha de Inicio: Formato YYYY-MM-DD (ej: 2024-01-01)",
+    "recurrence_interval": "   - Intervalo de Recurrencia: Número (predeterminado: 1)",
+    "recurrence_days": "   - Días de la Semana: Para weekly, use 0-6 separados por comas",
+    "end_date_format": "   - Fecha de Fin: Formato YYYY-MM-DD o dejar vacío",
+    "persistent_field": "   - Persistente: \"true\" para persistente, \"false\" para no persistente",
+    "advanced_title": "3. CAMPOS PARA TIPOS AVANZADOS:",
+    "weekly_interval": "   - Intervalo de Semanas: Para biweekly/triweekly/quadweekly (2, 3, 4)",
+    "weekday_field": "   - Día de la Semana: Para tipos avanzados (0-6)",
+    "monthly_ordinal": "   - Ordinal Mensual: Para monthly_weekday (1-4 = primera-cuarta, -1 = última)",
+    "monthly_weekday": "   - Día de la Semana Mensual: Para monthly_weekday (0-6)",
+    "available_lists": "LISTAS DISPONIBLES:",
+    "list_item": "   - ID {{id}}: {{name}} ({{project}})",
+    "available_users": "USUARIOS DISPONIBLES:",
+    "user_item": "   - ID {{id}}: {{name}}",
+    "notes_title": "6. NOTAS IMPORTANTES:",
+    "note_use_list_or_id": "   - Puede usar el nombre de la lista o su ID numérico",
+    "note_use_user_or_id": "   - Puede usar el nombre del usuario o su ID numérico",
+    "note_date_format": "   - Las fechas deben estar en el formato YYYY-MM-DD",
+    "note_remove_example_rows": "   - Elimine las filas de ejemplo antes de importar sus datos",
+    "note_required_fields": "   - Los campos obligatorios no pueden estar vacíos",
+    "note_advanced_types": "   - Para tipos avanzados, complete los campos específicos"
+  },
+  "important": {
+    "title": "Importante:",
+    "keep_columns": "Mantenga el formato original de las columnas",
+    "required_marked": "Los campos marcados con * son obligatorios",
+    "advanced_fill": "Para tipos avanzados de recurrencia, complete los campos específicos",
+    "check_user_access": "Verifique si los usuarios tienen acceso a las listas seleccionadas"
+  },
+  "file": {
+    "click_to_select_another": "Haga clic para seleccionar otro archivo",
+    "click_to_select": "Haga clic para seleccionar el archivo Excel",
+    "supported_formats": "Formatos soportados: .xlsx, .xls",
+    "name": "plantilla_{{type}}_completa_{{timestamp}}.xlsx",
+    "type": {
+      "tasks": "tareas",
+      "routines": "rutinas"
+    }
+  },
+  "toast": {
+    "download_success": "¡Plantilla completa para {{type}} descargada con éxito!",
+    "error_generate_template": "Error al generar la plantilla Excel",
+    "select_file": "Seleccione un archivo Excel",
+    "process_success": "¡{{count}} registro(s) procesado(s) con éxito!",
+    "sheet_errors": "{{count}} error(es) encontrado(s) en la hoja de cálculo",
+    "error_process_file": "Error al procesar el archivo Excel",
+    "import_success": "¡{{count}} {{type}} importado(s) con éxito!",
+    "import_failures": "{{count}} {{type}} fallaron en la importación",
+    "error_import": "Error al ejecutar la importación"
+  },
+  "console": {
+    "error_generate_workbook": "Error al generar la hoja de cálculo:",
+    "error_process_file": "Error al procesar el archivo:",
+    "error_insert_row": "Error al insertar la fila {{row}}:",
+    "error_import": "Error en la importación:"
+  },
+  "errors": {
+    "title": "Errores encontrados:"
+  },
+  "sheet": {
+    "tasks": "Tareas",
+    "routines": "Rutinas"
+  },
+  "headers": {
+    "task_description": "Descripción de la Tarea *",
+    "list_name_or_id": "Lista (Nombre o ID) *",
+    "responsible_name_or_id": "Responsable (Nombre o ID) *",
+    "deadline": "Fecha Límite (YYYY-MM-DD)",
+    "status": "Estado (true/false)",
+    "note": "Nota",
+    "routine_description": "Descripción de la Rutina *",
+    "recurrence_type": "Tipo de Recurrencia *",
+    "recurrence_interval": "Intervalo
