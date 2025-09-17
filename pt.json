@@ -1,0 +1,248 @@
+{
+  "modal": {
+    "title": "Importar {{type}} via Excel"
+  },
+  "buttons": {
+    "close": "Fechar",
+    "download_template": "Baixar Template Completo",
+    "back": "Voltar",
+    "process_file": "Processar Arquivo",
+    "processing": "Processando...",
+    "confirm_import": "Confirmar Importação",
+    "importing": "Importando..."
+  },
+  "steps": {
+    "download": "Download Template",
+    "upload": "Upload Planilha",
+    "confirmation": "Confirmação"
+  },
+  "instructions": {
+    "how_it_works_title": "Como funciona:",
+    "step1": "Baixe o template Excel completo com instruções",
+    "step2": "Preencha com seus dados seguindo as instruções",
+    "step3": "Faça upload do arquivo preenchido",
+    "step4": "Confirme e importe os dados",
+    "sheet_header": "INSTRUÇÕES PARA IMPORTAÇÃO DE {{type}}",
+    "sheet_header_plain": "INSTRUÇÕES PARA IMPORTAÇÃO DE {{type}}",
+    "required_title": "1. CAMPOS OBRIGATÓRIOS (marcados com *):",
+    "task_description": "   - Descrição da Tarefa: Texto descrevendo a tarefa",
+    "list_field": "   - Lista: Nome da lista ou ID numérico",
+    "responsible_field": "   - Responsável: Nome do usuário ou ID numérico",
+    "optional_title": "2. CAMPOS OPCIONAIS:",
+    "deadline_format": "   - Data Limite: Formato YYYY-MM-DD (ex: 2024-12-31)",
+    "status_format": "   - Status: \"true\" para concluída, \"false\" para pendente",
+    "note_field": "   - Nota: Informações adicionais sobre a tarefa",
+    "routine_description": "   - Descrição da Rotina: Texto descrevendo a rotina",
+    "recurrence_type_field": "   - Tipo Recorrência: daily, weekly, monthly, yearly, biweekly, triweekly, quadweekly, monthly_weekday",
+    "start_date_format": "   - Data Início: Formato YYYY-MM-DD (ex: 2024-01-01)",
+    "recurrence_interval": "   - Intervalo Recorrência: Número (padrão: 1)",
+    "recurrence_days": "   - Dias Semana: Para weekly, usar 0-6 separados por vírgula",
+    "end_date_format": "   - Data Fim: Formato YYYY-MM-DD ou deixar vazio",
+    "persistent_field": "   - Persistente: \"true\" para persistente, \"false\" para não persistente",
+    "advanced_title": "3. CAMPOS PARA TIPOS AVANÇADOS:",
+    "weekly_interval": "   - Intervalo Semanas: Para biweekly/triweekly/quadweekly (2, 3, 4)",
+    "weekday_field": "   - Dia da Semana: Para tipos avançados (0-6)",
+    "monthly_ordinal": "   - Ordinal Mensal: Para monthly_weekday (1-4 = primeira-quarta, -1 = última)",
+    "monthly_weekday": "   - Dia Semana Mensal: Para monthly_weekday (0-6)",
+    "available_lists": "LISTAS DISPONÍVEIS:",
+    "list_item": "   - ID {{id}}: {{name}} ({{project}})",
+    "available_users": "USUÁRIOS DISPONÍVEIS:",
+    "user_item": "   - ID {{id}}: {{name}}",
+    "notes_title": "6. OBSERVAÇÕES IMPORTANTES:",
+    "note_use_list_or_id": "   - Você pode usar o nome da lista ou seu ID numérico",
+    "note_use_user_or_id": "   - Você pode usar o nome do usuário ou seu ID numérico",
+    "note_date_format": "   - Datas devem estar no formato YYYY-MM-DD",
+    "note_remove_example_rows": "   - Remove as linhas de exemplo antes de importar seus dados",
+    "note_required_fields": "   - Campos obrigatórios não podem estar vazios",
+    "note_advanced_types": "   - Para tipos avançados, preencha os campos específicos"
+  },
+  "important": {
+    "title": "Importante:",
+    "keep_columns": "Mantenha o formato original das colunas",
+    "required_marked": "Campos marcados com * são obrigatórios",
+    "advanced_fill": "Para tipos avançados de recorrência, preencha os campos específicos",
+    "check_user_access": "Verifique se usuários têm acesso às listas selecionadas"
+  },
+  "file": {
+    "click_to_select_another": "Clique para selecionar outro arquivo",
+    "click_to_select": "Clique para selecionar o arquivo Excel",
+    "supported_formats": "Formatos suportados: .xlsx, .xls",
+    "name": "template_{{type}}_completo_{{timestamp}}.xlsx",
+    "type": {
+      "tasks": "tarefas",
+      "routines": "rotinas"
+    }
+  },
+  "toast": {
+    "download_success": "Template completo para {{type}} baixado com sucesso!",
+    "error_generate_template": "Erro ao gerar template Excel",
+    "select_file": "Selecione um arquivo Excel",
+    "process_success": "{{count}} registro(s) processado(s) com sucesso!",
+    "sheet_errors": "{{count}} erro(s) encontrado(s) na planilha",
+    "error_process_file": "Erro ao processar arquivo Excel",
+    "import_success": "{{count}} {{type}} importada(s) com sucesso!",
+    "import_failures": "{{count}} {{type}} falharam na importação",
+    "error_import": "Erro ao executar importação"
+  },
+  "console": {
+    "error_generate_workbook": "Erro ao gerar planilha:",
+    "error_process_file": "Erro ao processar arquivo:",
+    "error_insert_row": "Erro ao inserir linha {{row}}:",
+    "error_import": "Erro na importação:"
+  },
+  "errors": {
+    "title": "Erros encontrados:"
+  },
+  "errors_list": {},
+  "errors_messages": {},
+  "errors_generic": {},
+  "errors_validation": {},
+  "errors_ui": {},
+  "errors_server": {},
+  "errors_client": {},
+  "sheet": {
+    "tasks": "Tarefas",
+    "routines": "Rotinas"
+  },
+  "headers": {
+    "task_description": "Descrição da Tarefa *",
+    "list_name_or_id": "Lista (Nome ou ID) *",
+    "responsible_name_or_id": "Responsável (Nome ou ID) *",
+    "deadline": "Data Limite (YYYY-MM-DD)",
+    "status": "Status (true/false)",
+    "note": "Nota",
+    "routine_description": "Descrição da Rotina *",
+    "recurrence_type": "Tipo Recorrência *",
+    "recurrence_interval": "Intervalo Recorrência",
+    "recurrence_days": "Dias Semana (0-6)",
+    "start_date": "Data Início (YYYY-MM-DD) *",
+    "end_date": "Data Fim (YYYY-MM-DD)",
+    "persistent": "Persistente (true/false)",
+    "weekly_interval": "Intervalo Semanas (2/3/4)",
+    "selected_weekday": "Dia da Semana (0-6)",
+    "monthly_ordinal": "Ordinal Mensal (1-4, -1)",
+    "monthly_weekday": "Dia Semana Mensal (0-6)"
+  },
+  "examples": {
+    "title": "Exemplos de uso:",
+    "task1": {
+      "content": "Implementar nova funcionalidade",
+      "list": "Lista de Desenvolvimento",
+      "note": "Prioridade alta - cliente aguardando"
+    },
+    "task2": {
+      "content": "Revisar documentação",
+      "list": "Lista de QA",
+      "note": ""
+    },
+    "task3": {
+      "content": "Corrigir bug crítico",
+      "list": "Lista de Desenvolvimento",
+      "note": "Verificar logs do sistema"
+    },
+    "routine1": {
+      "content": "Backup diário do sistema",
+      "list": "Lista de Infraestrutura",
+      "note": "Backup completo incluindo banco de dados"
+    },
+    "routine2": {
+      "content": "Reunião semanal da equipe",
+      "list": "Lista de Gestão",
+      "note": "Todas as segundas-feiras às 10h"
+    },
+    "routine3": {
+      "content": "Relatório mensal de vendas",
+      "list": "Lista de Vendas",
+      "note": "Enviar para diretoria até dia 5"
+    },
+    "routine4": {
+      "content": "Revisão quinzenal de projetos",
+      "list": "Lista de Gestão",
+      "note": "A cada 2 semanas nas quartas-feiras"
+    },
+    "routine5": {
+      "content": "Reunião da primeira segunda",
+      "list": "Lista de Gestão",
+      "note": "Primeira segunda-feira de cada mês"
+    },
+    "biweekly": "A cada 2 semanas nas quartas-feiras",
+    "monthly_weekday": "Primeira segunda-feira de cada mês",
+    "quadweekly": "A cada 4 semanas nas sextas-feiras"
+  },
+  "validation": {
+    "description_required": "Linha {{row}}: Descrição é obrigatória",
+    "list_required": "Linha {{row}}: Lista é obrigatória",
+    "responsible_required": "Linha {{row}}: Responsável é obrigatório",
+    "recurrence_required": "Linha {{row}}: Tipo de recorrência é obrigatório",
+    "recurrence_invalid": "Linha {{row}}: Tipo de recorrência inválido. Use: {{allowed}}",
+    "start_date_required": "Linha {{row}}: Data de início é obrigatória",
+    "weekday_required": "Linha {{row}}: Dia da semana é obrigatório para tipo {{type}}",
+    "monthly_required": "Linha {{row}}: Ordinal mensal e dia da semana são obrigatórios para monthly_weekday",
+    "list_not_found": "Linha {{row}}: Lista \"{{lista}}\" não encontrada",
+    "user_not_found": "Linha {{row}}: Usuário \"{{usuario}}\" não encontrado",
+    "user_no_access": "Linha {{row}}: Usuário \"{{usuarioName}}\" não tem acesso à lista \"{{listaName}}\"",
+    "date_format": "Linha {{row}}: Data deve estar no formato YYYY-MM-DD",
+    "start_date_format": "Linha {{row}}: Data de início deve estar no formato YYYY-MM-DD",
+    "end_date_format": "Linha {{row}}: Data de fim deve estar no formato YYYY-MM-DD"
+  },
+  "table": {
+    "data_title": "Dados para importação ({{count}} registros)",
+    "headers": {
+      "description": "Descrição",
+      "list": "Lista",
+      "responsible": "Responsável",
+      "recurrence": "Recorrência"
+    },
+    "every_interval": "a cada {{interval}}",
+    "more": "... e mais {{count}} registros"
+  },
+  "advanced": {
+    "button": "Tipos de Recorrência Avançados",
+    "supported_title": "Tipos de Recorrência Suportados:",
+    "basic_title": "Tipos Básicos:",
+    "advanced_title": "Tipos Avançados:"
+  },
+  "recurrence": {
+    "daily": "Diário",
+    "weekly": "Semanal",
+    "monthly": "Mensal (dia fixo)",
+    "yearly": "Anual",
+    "biweekly": "A cada 2 semanas",
+    "triweekly": "A cada 3 semanas",
+    "quadweekly": "A cada 4 semanas",
+    "monthly_weekday": "Padrão mensal (ex: 1ª segunda)",
+    "monthly_weekday_short": "Padrão mensal"
+  },
+  "ordinal": {
+    "first": "Primeira",
+    "second": "Segunda",
+    "third": "Terceira",
+    "fourth": "Quarta",
+    "last": "Última"
+  },
+  "day": {
+    "monday": "Segunda",
+    "tuesday": "Terça",
+    "wednesday": "Quarta",
+    "thursday": "Quinta",
+    "friday": "Sexta",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "short": {
+      "monday": "SEG",
+      "tuesday": "TER",
+      "wednesday": "QUA",
+      "thursday": "QUI",
+      "friday": "SEX",
+      "saturday": "SAB",
+      "sunday": "DOM"
+    }
+  },
+  "type": {
+    "tasks": "Tarefas",
+    "routines": "Rotinas"
+  },
+  "general": {
+    "project_not_found": "Projeto não encontrado"
+  }
+}
